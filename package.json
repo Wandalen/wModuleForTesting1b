@@ -1,5 +1,5 @@
 {
-  "name" : "wmodulefortesting1a", 
+  "name" : "wmodulefortesting1b", 
   "version" : "0.0.2", 
   "engine" : "node >= 8.0.0", 
   "description" : "Module for testing. This module is test assets not intended to be used with another purpose.", 
