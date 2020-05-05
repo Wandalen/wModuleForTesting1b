@@ -2,13 +2,13 @@
 
 'use strict';
 
-let test1 = require( 'wmodulefortesting1' );
+let test1 = require( '../../../Tools.s' );
 
 // --
 // Routines
 // --
 
-function squareRootOfSum() 
+function squareRootOfSum()
 {
   let result = test1.sumOfNumbers.apply( this, arguments );
   result = Math.sqrt( result );
