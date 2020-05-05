@@ -9,7 +9,7 @@
 let _ = null;
 
 if( typeof module !== 'undefined' )
-_ = require( './l3/ModuleForTesting1b.s' );
+_ = require( './ModuleForTesting1b.s' );
 
 if( typeof module !== 'undefined' && module !== null )
 module[ 'exports' ].squareRootOfSum = _.squareRootOfSum;
