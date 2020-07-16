@@ -1,4 +1,4 @@
-var _ = require( '../' )
+let _ = require( '../' )
 
 var result = _.squareRootOfSum( 14, 2 );
 
