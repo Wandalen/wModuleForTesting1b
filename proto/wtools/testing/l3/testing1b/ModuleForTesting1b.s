@@ -1,8 +1,12 @@
-( function _ModuleForTesting1b_s_() {
+( function _ModuleForTesting1b_s_()
+{
 
 'use strict';
 
-let test1 = require( '../../../Tools.s' );
+if( typeof module !== 'undefined' )
+require( '../../Basic.s' );
+
+let test1 = _global_._test_;
 
 // --
 // Routines
@@ -16,12 +20,16 @@ function squareRootOfSum()
   return result;
 }
 
+//
+
+test1 = Object.assign( test1, { squareRootOfSum } );
+
 // --
 // export
 // --
 
 if( typeof module !== 'undefined' && module !== null )
-module[ 'exports' ].squareRootOfSum = squareRootOfSum;
+module[ 'exports' ] = test1;
 
 })();
 
