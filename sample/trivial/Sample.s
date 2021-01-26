@@ -1,5 +1,5 @@
 if( typeof module !== 'undefined' )
-require( '../' );
+require( 'wmodulefortesting1b' );
 
 let _ = _global_._test_;
 
