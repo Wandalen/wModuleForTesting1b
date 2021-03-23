@@ -1,7 +1,5 @@
-if( typeof module !== 'undefined' )
-require( 'wmodulefortesting1b' );
 
-let _ = _global_._test_;
+let _ = require( 'wmodulefortesting1b' );
 
 var result = _.squareRootOfSum( 14, 2 );
 
