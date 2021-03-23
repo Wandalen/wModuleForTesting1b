@@ -19,12 +19,15 @@ function squareRootOfSum()
   return result;
 }
 
+Object.assign( _, { squareRootOfSum } );
+
 // --
 // export
 // --
 
 if( typeof module !== 'undefined' && module !== null )
 module[ 'exports' ].squareRootOfSum = squareRootOfSum;
+module[ 'exports' ] = _;
 
 })();
 
