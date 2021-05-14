@@ -3,9 +3,7 @@
 
 'use strict';
 
-let _;
-if( typeof module !== 'undefined' )
-_ = require( '../../Basic.s' );
+let _ = require( '../../Common.s' );
 
 // --
 // Routines
