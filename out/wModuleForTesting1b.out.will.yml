@@ -3,8 +3,8 @@ root:
   - wModuleForTesting1b.out
 consistency:
   ../will.yml: &ref_0
-    hash: 5b0118d3b5726ec366f60b6e59e988f4
-    size: 6597
+    hash: 5283bce53640d898dc7e13f555bf3e53
+    size: 6335
 module:
   wModuleForTesting1b.out:
     about:
@@ -28,9 +28,6 @@ module:
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      npm.scripts: &ref_4
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
     path:
       module.willfiles:
         criterion:
@@ -153,35 +150,19 @@ module:
           export: 1
         path:
           - ../proto
-          - ../proto/Integration.test.ss
           - ../proto/node_modules
           - ../proto/node_modules/wmodulefortesting1b
           - ../proto/wtools
           - ../proto/wtools/testing
-          - ../proto/wtools/testing/Basic.s
+          - ../proto/wtools/testing/Common.s
           - ../proto/wtools/testing/l3
           - ../proto/wtools/testing/l3/testing1b
-          - ../proto/wtools/testing/l3/testing1b/Include.s
           - ../proto/wtools/testing/l3/testing1b/ModuleForTesting1b.s
-          - ../proto/wtools/testing/l3.test
-          - ../proto/wtools/testing/l3.test/ModuleForTesting1b.test.s
     submodule:
       wmodulefortesting1@gamma:
         path: 'npm:///wmodulefortesting1@gamma'
         autoExporting: 0
         enabled: 0
-      wTesting:
-        path: 'npm:///wTesting'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
-      eslint:
-        path: 'npm:///eslint#7.1.0'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -793,7 +774,6 @@ module:
       keywords: *ref_1
       contributors: *ref_2
       interpreters: *ref_3
-      npm.scripts: *ref_4
     path:
       module.willfiles:
         criterion:
@@ -908,18 +888,6 @@ module:
         path: 'npm:///wmodulefortesting1@gamma'
         autoExporting: 0
         enabled: 0
-      wTesting:
-        path: 'npm:///wTesting'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
-      eslint:
-        path: 'npm:///eslint#7.1.0'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -1452,5 +1420,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 5b0118d3b5726ec366f60b6e59e988f4
-        size: 6597
+        hash: 5283bce53640d898dc7e13f555bf3e53
+        size: 6335
